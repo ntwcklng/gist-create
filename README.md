@@ -1,8 +1,25 @@
 # gist-create
 
-Create an anonymous gist:
+## Install
+Install it globally so you can create your anonymous Gist from every directory.
 ```
-$ gist-create index.html --description "My non-public index.html file" --public false
-$ Copied https://gist.github.com/0c889e6b29ccdc51f4007e3eb281c5a9 to clipboard!
+$ npm install -g gist-create
+```
+
+## Usage
+```
+$ gist-create --help
+
+Create a Gist from the Commandline
+
+Usage
+  $ gist-create <file> [options,]
+
+Options
+  --description, -d <string> Add a description
+  --public, -p <boolean> Make your Gist Public (default: false)
+
+Example
+  $ gist-create index.html --description "My non-public index.html file" --public false
 
 ```
