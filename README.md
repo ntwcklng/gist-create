@@ -1,7 +1,7 @@
 # gist-create
+> Create a Gist from your CommandLine
 
 ## Install
-Install it globally so you can create your anonymous Gist from every directory.
 ```
 $ npm install -g gist-create
 ```
@@ -21,5 +21,7 @@ Options
 
 Example
   $ gist-create index.html --description "My non-public index.html file" --public false
-
 ```
+
+## License
+MIT © [Marvin Mieth](https://github.com/ntwcklng)

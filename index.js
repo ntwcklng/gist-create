@@ -10,7 +10,7 @@ const github = new githubClient({
 
 module.exports = function(file, options) {
   const public = options.public || false;
-  const description = options.description || 'Created with gist-create';
+  const description = options.description || 'Created with https://www.npmjs.com/package/gist-create';
   const fileContent = fs.readFileSync(file, 'utf-8', (err, data) => {
     if(err) console.log(chalk.red(`Make sure your ${file} exists. \n ${err}`));
     return data;
