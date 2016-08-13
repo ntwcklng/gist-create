@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 
 const meow = require('meow');
+const updateNotifier = require('update-notifier');
 const gistCreate = require('./index.js');
 
 const cli = meow(`
@@ -20,4 +21,5 @@ const cli = meow(`
   }
 });
 
+updateNotifier({pkg: cli.pkg}).notify();
 gistCreate(cli.input[0], cli.flags);
