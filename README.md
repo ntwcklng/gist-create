@@ -1,4 +1,4 @@
-# gist-create
+# gist-create [![Build Status](https://travis-ci.org/ntwcklng/gist-create.svg?branch=master)](https://travis-ci.org/ntwcklng/gist-create)
 > Create a Gist from your CommandLine
 
 ## Install
