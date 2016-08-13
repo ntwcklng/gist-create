@@ -1,18 +1,8 @@
 # gist-create
 
 Create an anonymous gist:
-```javascript
-const gistCreate = require('gist-create');
+```
+$ gist-create index.html --description "My non-public index.html file" --public false
+$ Copied https://gist.github.com/0c889e6b29ccdc51f4007e3eb281c5a9 to clipboard!
 
-gistCreate.new({
-  "description": "new created gist",
-  "public": false,
-  "files": {
-    "index.js": {
-      "content": "console.log('hello');"
-    }
-  }
-}).then((res) => {
-  console.log(res); // https://gist.github.com/21b4508b21e073fa6d309e724dcacac7
-});
 ```

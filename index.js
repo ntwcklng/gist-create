@@ -8,7 +8,6 @@ const github = new githubClient({
 });
 
 
-
 module.exports = function(file, options) {
   const public = options.public || false;
   const description = options.description || 'Created with gist-create';
