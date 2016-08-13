@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
 const meow = require('meow');
-const gistCreate = require('./');
+const gistCreate = require('./index.js');
 
 const cli = meow(`
   Usage
