@@ -7,8 +7,7 @@ const github = new GithubClient({
   version: '3.0.0',
 });
 
-function gistCreate(files, options) {
-
+module.exports = function gistCreate(files, options) {
   function returnFileContent(file) {
     return fs.readFileSync(file, 'utf-8', (err, data) => {
       if (err) console.error(chalk.red(`Make sure your ${file} exists. \n ${err}`)); // eslint-disable-line
@@ -38,6 +37,4 @@ function gistCreate(files, options) {
       return console.log(chalk.blue(`Copied ${res.html_url} to clipboard!`));
     });
   });
-}
-
-module.exports = gistCreate();
+};
