@@ -24,7 +24,7 @@
     "eslint-plugin-import": "^1.13.0"
   },
   "scripts": {
-    "test": "ava"
+    "test": "ava && eslint index.js cli.js"
   },
   "repository": {
     "type": "git",

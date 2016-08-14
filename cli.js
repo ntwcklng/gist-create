@@ -3,6 +3,7 @@
 const meow = require('meow');
 const updateNotifier = require('update-notifier');
 const gistCreate = require('./index.js');
+const pkg = require('./package.json');
 
 const cli = meow(`
   Usage
@@ -17,9 +18,9 @@ const cli = meow(`
 `, {
   alias: {
     d: 'description',
-    p: 'public'
-  }
+    p: 'public',
+  },
 });
 
-updateNotifier({pkg: cli.pkg}).notify();
+updateNotifier({ pkg }).notify();
 gistCreate(cli.input[0], cli.flags);
