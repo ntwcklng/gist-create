@@ -23,4 +23,4 @@ const cli = meow(`
 });
 
 updateNotifier({ pkg }).notify();
-gistCreate(cli.input[0], cli.flags);
+gistCreate(cli.input, cli.flags);
